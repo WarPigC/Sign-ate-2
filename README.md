@@ -1,71 +1,56 @@
-# Getting Started with Create React App
+# Acropolis Email Signature Generator (Sign-ATE)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based web application designed to standardize and generate professional email signatures for the staff and students of the **Acropolis Group of Institutions**.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Standardized Templates:** Automatically generates clean, branded email signatures compliant with Acropolis guidelines.
+- **Dynamic Institution Selection:** Select your specific college (AITR, AIMSR, AIPER, AIL, etc.) to automatically fetch and embed the correct logo and website link.
+- **Rich Text Editor:** Built-in `react-quill` editor allows users to easily format additional information (like quotes, disclaimers, or specific announcements) with bold, italic, and underline styling.
+- **One-Click Copy:** Easily copy the generated HTML signature directly to your clipboard, ready to be pasted into Gmail, Outlook, or any other email client while retaining all images and formatting.
 
-### `npm start`
+## Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** React 18
+- **Styling:** React Bootstrap & vanilla CSS
+- **Rich Text Editor:** React Quill
+- **Routing:** React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+You need Node.js and npm installed on your machine.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/WarPigC/Sign-ate-2.git
+   ```
+2. Navigate into the project directory:
+   ```bash
+   cd Sign-ate-2
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Running the Application
 
-### `npm run eject`
+To start the development server, run:
+```bash
+npm start
+```
+This will launch the app in your default web browser at `http://localhost:3000`. The page will reload if you make edits to the code.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Building for Production
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# Sign-ATE" 
+To create an optimized production build, run:
+```bash
+npm run build
+```
+This builds the app for production to the `build` folder, bundling React in production mode and optimizing the build for the best performance.
