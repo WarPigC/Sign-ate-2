@@ -23,3 +23,7 @@ code {
   width: 100%;
   margin-top: 10px;
 }
+
+.ql-editor {
+  min-height: 150px;
+}
