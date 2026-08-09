@@ -89,7 +89,7 @@ const EmailSignatureForm = () => {
     <div className="container mt-5" style={{ fontFamily: "'Roboto', sans-serif" }}>
       <div className="text-center mb-5">
         <h2 style={{ fontWeight: "800", color: "#2c3e50", letterSpacing: "1px" }}>
-          Acropolis Email Signature Generator
+          Acropolis Email Signature Generator.
         </h2>
       </div>
 
