@@ -17,7 +17,7 @@ const Header = () => {
           <Navbar expand="sm" >
             <Container>
               <Navbar.Brand href="/">
-                  <img style={{ height: "60px", width: "auto" }} src="/acropolis-logo.png" alt="Acropolis Logo" className="align-center" />
+                  <img style={{ height: "60px", width: "auto" }} src={process.env.PUBLIC_URL + '/acropolis-logo.png'} alt="Acropolis Logo" className="align-center" />
               </Navbar.Brand>
             </Container>
           </Navbar>
