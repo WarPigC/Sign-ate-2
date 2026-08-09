@@ -66,6 +66,25 @@ const EmailSignatureForm = () => {
     <Tooltip>{text}</Tooltip>
   );
 
+  const quillModules = {
+    toolbar: [
+      [{ font: [] }, { header: [1, 2, 3, 4, 5, 6, false] }],
+      ["bold", "italic", "underline", "strike"],
+      [{ color: [] }, { background: [] }],
+      [{ script: "sub" }, { script: "super" }],
+      ["blockquote", "code-block"],
+      [
+        { list: "ordered" },
+        { list: "bullet" },
+        { indent: "-1" },
+        { indent: "+1" },
+      ],
+      [{ direction: "rtl" }, { align: [] }],
+      ["link", "image", "video", "formula"],
+      ["clean"],
+    ],
+  };
+
   return (
     <div className="container mt-5" style={{ fontFamily: "'Roboto', sans-serif" }}>
       <div className="text-center mb-5">
@@ -306,6 +325,7 @@ const EmailSignatureForm = () => {
           <div style={{ backgroundColor: "white" }}>
             <ReactQuill
               theme="snow"
+              modules={quillModules}
               value={formData.extraContent}
               onChange={handleQuillChange}
             />
