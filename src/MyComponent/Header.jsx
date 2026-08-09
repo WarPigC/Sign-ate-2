@@ -1,9 +1,7 @@
 import React from "react";
 import { Container, Navbar, Row, Col } from "react-bootstrap";
 
-const Header = (props) => {
-  const { title } = props;
-
+const Header = () => {
   const headerStyle = {    
     backgroundColor: "rgb(210 210 210)",
     color: "#333",
