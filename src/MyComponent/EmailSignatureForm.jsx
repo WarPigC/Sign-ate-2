@@ -138,57 +138,42 @@ const EmailSignatureForm = () => {
             onChange={handleChange}
           >
             <option value="">Select Department</option>
-            <optgroup label="Acropolis Group of Institution">
-              <option value="Career Development Cell (CDC)">Career Development Cell (CDC)</option>
+            <optgroup label="Acropolis Group of Institutions (AGI)">
+              <option value="Career Development Center">Career Development Center</option>
+              <option value="AcroCare">AcroCare</option>
               <option value="Administrative Office">Administrative Office</option>
               <option value="Technical Department">Technical Department</option>
               <option value="Accounts Department">Accounts Department</option>
               <option value="Sports Department">Sports Department</option>
               <option value="Transport Department">Transport Department</option>
               <option value="Security Department">Security Department</option>
+              <option value="Acropolis Innovation and Incubation Hub">Acropolis Innovation and Incubation Hub</option>
+              <option value="Acropolis Food Testing Laboratory">Acropolis Food Testing Laboratory</option>
             </optgroup>
-            <optgroup label="Acropolis Institute of Technology & Research">
-              <option value="Computer Science & Engineering (CSE)">Computer Science & Engineering (CSE)</option>
-              <option value="Information Technology (IT)">Information Technology (IT)</option>
-              <option value="Computer Science Information Technology (CSIT)">Computer Science & Information Technology (CSIT)</option>
-              <option value="CSE Artificial Intelligence & Machine Learning (AIML)">CSE Artificial Intelligence & Machine Learning (AIML)</option>
-              <option value="CSE Data Science (DS)">CSE Data Science (DS)</option>
-              <option value="CSE Cyber Security">CSE Cyber Security</option>
-              <option value="CSE Indian Language">CSE Indian Language</option>
-              <option value="Electronics & Communication (EC)">Electronics & Communication (EC)</option>
-              <option value="Electronics & Communication (VLSI Design & Technology)">Electronics & Communication (VLSI Design & Technology)</option>
-              <option value="Electronics & Communication (Advanced Communications)">Electronics & Communication (Advanced Communications)</option>
-              <option value="Civil Engineering">Civil Engineering</option>
-              <option value="Mechanical Engineering">Mechanical Engineering</option>
-              <option value="Faculty of Computer Application (FCA)">Faculty of Computer Application (FCA)</option>
+            <optgroup label="Acropolis Institute of Technology &amp; Research (AITR)">
+              <option value="Department of Computer Science Engineering (CSE)">Department of Computer Science Engineering (CSE)</option>
+              <option value="Department of Information Technology (IT)">Department of Information Technology (IT)</option>
+              <option value="Department of Computer Science &amp; Information Technology (CS&amp;IT)">Department of Computer Science &amp; Information Technology (CS&amp;IT)</option>
+              <option value="Department of Computer Science (Artificial Intelligence &amp; Machine Learning)">Department of Computer Science (Artificial Intelligence &amp; Machine Learning)</option>
+              <option value="Department of Computer Science (Data Science)">Department of Computer Science (Data Science)</option>
+              <option value="Department of Computer Science (Cyber Security)">Department of Computer Science (Cyber Security)</option>
+              <option value="Department of Computer Science (Indian Language)">Department of Computer Science (Indian Language)</option>
+              <option value="Department of Electronics &amp; Communication">Department of Electronics &amp; Communication</option>
+              <option value="Department of Electronics &amp; Communication (VLSI Design &amp; Technology)">Department of Electronics &amp; Communication (VLSI Design &amp; Technology)</option>
+              <option value="Department of Electronics &amp; Communication (Advanced Communications)">Department of Electronics &amp; Communication (Advanced Communications)</option>
+              <option value="Department of Civil Engineering">Department of Civil Engineering</option>
+              <option value="Department of Mechanical Engineering">Department of Mechanical Engineering</option>
+              <option value="Department of Computer Application (FCA)">Department of Computer Application (FCA)</option>
             </optgroup>
-            <optgroup label="Acropolis Faculty of Management & Research">
-              <option value="MBA">MBA</option>
-              <option value="MBA – Financial Administration (FA)">MBA – Financial Administration (FA)</option>
+            <optgroup label="Acropolis Institute of Management Studies &amp; Research (AIMSR)">
+              <option value="Department of Business Administration">Department of Business Administration</option>
+              <option value="Department of Commerce">Department of Commerce</option>
+              <option value="Department of Biosciences">Department of Biosciences</option>
+              <option value="Department of Computer Science">Department of Computer Science</option>
+              <option value="Department of Humanities">Department of Humanities</option>
             </optgroup>
-            <optgroup label="Acropolis Institute of Pharmaceutical Education & Research">
-              <option value="D. PHARM">D. PHARM</option>
-              <option value="B. PHARM">B. PHARM</option>
-              <option value="M. PHARM">M. PHARM</option>
-              <option value="Acropolis Food Testing Lab">Acropolis Food Testing Lab</option>
-            </optgroup>
-            <optgroup label="Acropolis Institute of Management Studies & Research">
-              <option value="BBA">BBA</option>
-              <option value="B.COM">B.COM</option>
-              <option value="B.SC">B.SC</option>
-              <option value="M.SC">M.SC</option>
-              <option value="B.A.">B.A.</option>
-              <option value="M.COM">M.COM</option>
-              <option value="MA">MA</option>
-            </optgroup>
-            <optgroup label="Acropolis Institute of Law">
-              <option value="B.A. LLB">B.A. LLB</option>
-              <option value="BBA LLB">BBA LLB</option>
-              <option value="LLB">LLB</option>
-              <option value="LLM">LLM</option>
-            </optgroup>
-            <optgroup label="AcroCare">
-              <option value="AcroCare">AcroCare</option>
+            <optgroup label="Acropolis Faculty of Management &amp; Research (AFMR)">
+              <option value="Master of Business Administration">Master of Business Administration</option>
             </optgroup>
           </Form.Select>
         </Form.Group>
