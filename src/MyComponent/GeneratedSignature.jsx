@@ -1,4 +1,5 @@
 import React from "react";
+import data from "../data.json";
 
 const GeneratedSignature = ({ formData }) => {
   if (!formData) return null;
@@ -23,17 +24,7 @@ const GeneratedSignature = ({ formData }) => {
   else if (designation === "HOD") fullDesignation = "Head Of Department";
   else fullDesignation = designation;
 
-  const collegeData = {
-    AITR: { link: "https://aitr.ac.in/", logo: "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
-    AGI: { link: "https://acropolis.in/", logo: "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
-    AFMR: { link: "https://afmr.ac.in/", logo: "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
-    AIPER: { link: "https://aiper.ac.in/", logo: "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
-    AIMSR: { link: "https://aimsr.ac.in/", logo: "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
-    AIL: { link: "https://www.acropolislaw.in/", logo: "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
-    FTL: { link: "https://acrolabs.in/", logo: "https://acrolabs.in/wp-content/uploads/2023/08/Acro_White-Logo-02-300x72.png" },
-  };
-
-  const selectedCollege = collegeData[college] || collegeData.AITR;
+  const selectedCollege = data.colleges[college] || data.colleges.AITR;
   
   const hasExtraContent = extraContent && extraContent !== "<p><br></p>" && extraContent !== "<p></p>";
 

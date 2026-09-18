@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import data from "../data.json";
 import {
   Form,
   Button,
@@ -120,12 +121,9 @@ const EmailSignatureForm = () => {
             required
           >
             <option value="">Select Institution</option>
-            <option value="Acropolis Group of Institutions">Acropolis Group of Institutions</option>
-            <option value="Acropolis Institute of Technology and Research">Acropolis Institute of Technology and Research</option>
-            <option value="Acropolis Institute of Pharmaceutical Education and Research">Acropolis Institute of Pharmaceutical Education and Research</option>
-            <option value="Acropolis Institute of Management Studies and Research">Acropolis Institute of Management Studies and Research</option>
-            <option value="Acropolis Institute of Law">Acropolis Institute of Law</option>
-            <option value="Acropolis Faculty of Management and Research">Acropolis Faculty of Management and Research</option>
+            {data.institutions.map((inst) => (
+              <option key={inst} value={inst}>{inst}</option>
+            ))}
           </Form.Select>
         </Form.Group>
 
@@ -138,43 +136,13 @@ const EmailSignatureForm = () => {
             onChange={handleChange}
           >
             <option value="">Select Department</option>
-            <optgroup label="Acropolis Group of Institutions (AGI)">
-              <option value="Career Development Center">Career Development Center</option>
-              <option value="AcroCare">AcroCare</option>
-              <option value="Administrative Office">Administrative Office</option>
-              <option value="Technical Department">Technical Department</option>
-              <option value="Accounts Department">Accounts Department</option>
-              <option value="Sports Department">Sports Department</option>
-              <option value="Transport Department">Transport Department</option>
-              <option value="Security Department">Security Department</option>
-              <option value="Acropolis Innovation and Incubation Hub">Acropolis Innovation and Incubation Hub</option>
-              <option value="Acropolis Food Testing Laboratory">Acropolis Food Testing Laboratory</option>
-            </optgroup>
-            <optgroup label="Acropolis Institute of Technology &amp; Research (AITR)">
-              <option value="Department of Computer Science Engineering (CSE)">Department of Computer Science Engineering (CSE)</option>
-              <option value="Department of Information Technology (IT)">Department of Information Technology (IT)</option>
-              <option value="Department of Computer Science &amp; Information Technology (CS&amp;IT)">Department of Computer Science &amp; Information Technology (CS&amp;IT)</option>
-              <option value="Department of Computer Science (Artificial Intelligence &amp; Machine Learning)">Department of Computer Science (Artificial Intelligence &amp; Machine Learning)</option>
-              <option value="Department of Computer Science (Data Science)">Department of Computer Science (Data Science)</option>
-              <option value="Department of Computer Science (Cyber Security)">Department of Computer Science (Cyber Security)</option>
-              <option value="Department of Computer Science (Indian Language)">Department of Computer Science (Indian Language)</option>
-              <option value="Department of Electronics &amp; Communication">Department of Electronics &amp; Communication</option>
-              <option value="Department of Electronics &amp; Communication (VLSI Design &amp; Technology)">Department of Electronics &amp; Communication (VLSI Design &amp; Technology)</option>
-              <option value="Department of Electronics &amp; Communication (Advanced Communications)">Department of Electronics &amp; Communication (Advanced Communications)</option>
-              <option value="Department of Civil Engineering">Department of Civil Engineering</option>
-              <option value="Department of Mechanical Engineering">Department of Mechanical Engineering</option>
-              <option value="Department of Computer Application (FCA)">Department of Computer Application (FCA)</option>
-            </optgroup>
-            <optgroup label="Acropolis Institute of Management Studies &amp; Research (AIMSR)">
-              <option value="Department of Business Administration">Department of Business Administration</option>
-              <option value="Department of Commerce">Department of Commerce</option>
-              <option value="Department of Biosciences">Department of Biosciences</option>
-              <option value="Department of Computer Science">Department of Computer Science</option>
-              <option value="Department of Humanities">Department of Humanities</option>
-            </optgroup>
-            <optgroup label="Acropolis Faculty of Management &amp; Research (AFMR)">
-              <option value="Master of Business Administration">Master of Business Administration</option>
-            </optgroup>
+            {Object.entries(data.departments).map(([group, depts]) => (
+              <optgroup key={group} label={group}>
+                {depts.map((dept) => (
+                  <option key={dept} value={dept}>{dept}</option>
+                ))}
+              </optgroup>
+            ))}
           </Form.Select>
         </Form.Group>
 

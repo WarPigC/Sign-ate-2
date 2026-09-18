@@ -1,0 +1,58 @@
+{
+  "institutions": [
+    "Acropolis Group of Institutions",
+    "Acropolis Institute of Technology and Research",
+    "Acropolis Institute of Pharmaceutical Education and Research",
+    "Acropolis Institute of Management Studies and Research",
+    "Acropolis Institute of Law",
+    "Acropolis Faculty of Management and Research"
+  ],
+  "departments": {
+    "Acropolis Group of Institutions (AGI)": [
+      "Career Development Center",
+      "AcroCare",
+      "Administrative Office",
+      "Technical Department",
+      "Accounts Department",
+      "Sports Department",
+      "Transport Department",
+      "Security Department",
+      "Acropolis Innovation and Incubation Hub",
+      "Acropolis Food Testing Laboratory"
+    ],
+    "Acropolis Institute of Technology & Research (AITR)": [
+      "Department of Computer Science Engineering (CSE)",
+      "Department of Information Technology (IT)",
+      "Department of Computer Science & Information Technology (CS&IT)",
+      "Department of Computer Science (Artificial Intelligence & Machine Learning)",
+      "Department of Computer Science (Data Science)",
+      "Department of Computer Science (Cyber Security)",
+      "Department of Computer Science (Indian Language)",
+      "Department of Electronics & Communication",
+      "Department of Electronics & Communication (VLSI Design & Technology)",
+      "Department of Electronics & Communication (Advanced Communications)",
+      "Department of Civil Engineering",
+      "Department of Mechanical Engineering",
+      "Department of Computer Application (FCA)"
+    ],
+    "Acropolis Institute of Management Studies & Research (AIMSR)": [
+      "Department of Business Administration",
+      "Department of Commerce",
+      "Department of Biosciences",
+      "Department of Computer Science",
+      "Department of Humanities"
+    ],
+    "Acropolis Faculty of Management & Research (AFMR)": [
+      "Master of Business Administration"
+    ]
+  },
+  "colleges": {
+    "AGI":   { "label": "AGI",   "link": "https://acropolis.in/",        "logo": "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
+    "AITR":  { "label": "AITR",  "link": "https://aitr.ac.in/",          "logo": "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
+    "AIMSR": { "label": "AIMSR", "link": "https://aimsr.ac.in/",         "logo": "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
+    "AIPER": { "label": "AIPER", "link": "https://aiper.ac.in/",         "logo": "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
+    "AFMR":  { "label": "AFMR",  "link": "https://afmr.ac.in/",          "logo": "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
+    "AIL":   { "label": "AIL",   "link": "https://www.acropolislaw.in/", "logo": "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
+    "FTL":   { "label": "FTL",   "link": "https://acrolabs.in/",         "logo": "https://acrolabs.in/wp-content/uploads/2023/08/Acro_White-Logo-02-300x72.png" }
+  }
+}
