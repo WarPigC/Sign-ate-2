@@ -6,7 +6,7 @@ import Header from "./MyComponent/Header";
 function App() {
   return (
     <Router>
-      <Header title={" Sign Ate"} />
+      <Header />
       <StudentForm />
     </Router>
   );

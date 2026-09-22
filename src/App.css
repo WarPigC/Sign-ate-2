@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+/* Normalize Quill's <p> tags inside signature preview */
+.sig-extra p {
+  margin: 3px 0 !important;
+}

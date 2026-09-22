@@ -1,4 +1,30 @@
 {
+  "meta": {
+    "groupWebsiteUrl": "https://acropolis.in/",
+    "groupWebsiteLabel": "Group Website",
+    "logo": "acropolis-logo.svg",
+    "institutionsList": [
+      "Acropolis Institute of Technology and Research",
+      "Acropolis Institute of Pharmaceutical Education and Research",
+      "Acropolis Institute of Management Studies and Research",
+      "Acropolis Faculty of Management and Research",
+      "Acropolis Institute of Law",
+      "Acropolis Innovation and Incubation Hub",
+      "Acropolis Food Testing Laboratory"
+    ],
+    "campusAddress": {
+      "label": "Campus Address",
+      "text": "Manglia Square,",
+      "linkText": "Indore Bypass Rd, Mangalya Sadak, Indore, Madhya Pradesh - 453771, India",
+      "url": "https://www.google.com/maps/search/Indore+Bypass+Rd,+Mangalya+Sadak,+Indore,+Madhya+Pradesh+-+453771,+India"
+    },
+    "cityOffice": {
+      "label": "City Office",
+      "text": "301, Starlit Tower,",
+      "linkText": "Yeshwant Niwas Road, Indore, Madhya Pradesh - 452003, India",
+      "url": "https://www.google.com/maps/search/Yeshwant+Niwas+Road,+Indore,+Madhya+Pradesh+-+452003,+India"
+    }
+  },
   "institutions": [
     "Acropolis Group of Institutions",
     "Acropolis Institute of Technology and Research",
@@ -45,14 +71,5 @@
     "Acropolis Faculty of Management & Research (AFMR)": [
       "Master of Business Administration"
     ]
-  },
-  "colleges": {
-    "AGI":   { "label": "AGI",   "link": "https://acropolis.in/",        "logo": "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
-    "AITR":  { "label": "AITR",  "link": "https://aitr.ac.in/",          "logo": "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
-    "AIMSR": { "label": "AIMSR", "link": "https://aimsr.ac.in/",         "logo": "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
-    "AIPER": { "label": "AIPER", "link": "https://aiper.ac.in/",         "logo": "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
-    "AFMR":  { "label": "AFMR",  "link": "https://afmr.ac.in/",          "logo": "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
-    "AIL":   { "label": "AIL",   "link": "https://www.acropolislaw.in/", "logo": "https://aimsr.ac.in/wp-content/uploads/2023/03/AITR-logo.jpg" },
-    "FTL":   { "label": "FTL",   "link": "https://acrolabs.in/",         "logo": "https://acrolabs.in/wp-content/uploads/2023/08/Acro_White-Logo-02-300x72.png" }
   }
 }
