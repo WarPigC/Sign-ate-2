@@ -204,7 +204,7 @@ const EmailSignatureForm = () => {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label>Department {infoIcon("Start typing to search departments")}</Form.Label>
+              <Form.Label>Department {infoIcon("Only for use of AGI, AITR, AIMSR, and AFMR Departments.")}</Form.Label>
               <Select
                 options={groupedDeptOptions}
                 value={selectedDeptOption}

@@ -64,12 +64,10 @@ const GeneratedSignature = ({ formData }) => {
 
   const buildAddressHtml = () => `
 <p style="margin:1px 0;font-size:13px;color:#333;padding-top:14px;white-space:nowrap;">
-  <b>${meta.campusAddress.label}:</b> ${meta.campusAddress.text}
-  <a href="${meta.campusAddress.url}" style="color:#1a0dab;font-size:13px;">${meta.campusAddress.linkText}</a>
+  <b>${meta.campusAddress.label}:</b> ${meta.campusAddress.text} ${meta.campusAddress.linkText}
 </p>
 <p style="margin:1px 0;font-size:13px;color:#333;white-space:nowrap;">
-  <b>${meta.cityOffice.label}:</b> ${meta.cityOffice.text}
-  <a href="${meta.cityOffice.url}" style="color:#1a0dab;font-size:13px;">${meta.cityOffice.linkText}</a>
+  <b>${meta.cityOffice.label}:</b> ${meta.cityOffice.text} ${meta.cityOffice.linkText}
 </p>`;
 
   const getClipboardHtml = () => `
@@ -88,7 +86,7 @@ ${phone ? `<p style="margin:3px 0 0;font-size:13px;color:#333;"><b>P-</b> <a hre
 ${email ? `<p style="margin:3px 0 0;font-size:13px;color:#333;"><b>M-</b> <a href="mailto:${email}" style="color:#1a0dab;font-size:13px;">${email}</a></p>` : ""}
 
 <p style="margin:10px 0 0;"><img src="${LOGO_URL}" width="200" alt="Acropolis Logo" style="display:block;" /></p>
-<p style="margin:10px 0 0;font-size:13px;color:#333;"><a href="${meta.groupWebsiteUrl}" style="color:#1a0dab;font-size:13px;">${meta.groupWebsiteUrl}</a></p>
+<p style="margin:10px 0 0;font-size:13px;color:#333;"><a href="${meta.groupWebsiteUrl}" style="color:#1a0dab;font-size:13px;">${meta.groupWebsiteLabel}</a></p>
 ${linkItems.length > 0 ? `<p style="margin:7px 0 0;font-size:13px;color:#333;">${buildLinksHtml()}</p>` : ""}
 ${hasExtraContent ? `<div style="margin-top:6px;font-size:13px;"><style>div p{margin:3px 0 !important;}</style>${extraContent}</div>` : ""}
 
@@ -146,7 +144,7 @@ ${showAddress ? buildAddressHtml() : ""}
 
           <p style={{ ...s, marginTop: "10px" }}>
             <a href={meta.groupWebsiteUrl} style={linkStyle}>
-              {meta.groupWebsiteUrl}
+              {meta.groupWebsiteLabel}
             </a>
           </p>
 
@@ -178,12 +176,10 @@ ${showAddress ? buildAddressHtml() : ""}
           {showAddress && (
             <div style={{ paddingTop: "14px" }}>
               <p style={{ margin: "1px 0", fontSize: "13px", color: "#333", lineHeight: "1.4", whiteSpace: "nowrap" }}>
-                <b>{meta.campusAddress.label}:</b> {meta.campusAddress.text}{" "}
-                <a href={meta.campusAddress.url} style={linkStyle}>{meta.campusAddress.linkText}</a>
+                <b>{meta.campusAddress.label}:</b> {meta.campusAddress.text} {meta.campusAddress.linkText}
               </p>
               <p style={{ margin: "1px 0", fontSize: "13px", color: "#333", lineHeight: "1.4", whiteSpace: "nowrap" }}>
-                <b>{meta.cityOffice.label}:</b> {meta.cityOffice.text}{" "}
-                <a href={meta.cityOffice.url} style={linkStyle}>{meta.cityOffice.linkText}</a>
+                <b>{meta.cityOffice.label}:</b> {meta.cityOffice.text} {meta.cityOffice.linkText}
               </p>
             </div>
           )}
