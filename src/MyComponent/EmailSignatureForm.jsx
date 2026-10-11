@@ -190,16 +190,13 @@ const EmailSignatureForm = () => {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label>Institution <span className="text-danger">*</span></Form.Label>
-              <Select
-                options={institutionOptions}
-                value={institutionOptions.find((o) => o.value === formData.institution) || null}
-                onChange={(selected) => setFormData((prev) => ({ ...prev, institution: selected ? selected.value : "" }))}
-                isClearable
-                isSearchable
-                placeholder="Search or select institution…"
-                styles={selectStyles}
-                noOptionsMessage={() => "No matching institution"}
+              <Form.Label>Designation</Form.Label>
+              <Form.Control
+                type="text"
+                name="designation"
+                value={formData.designation}
+                onChange={handleChange}
+                placeholder="e.g. Associate Professor"
               />
             </Form.Group>
 
@@ -218,13 +215,16 @@ const EmailSignatureForm = () => {
             </Form.Group>
 
             <Form.Group className="mb-3">
-              <Form.Label>Designation</Form.Label>
-              <Form.Control
-                type="text"
-                name="designation"
-                value={formData.designation}
-                onChange={handleChange}
-                placeholder="e.g. Associate Professor"
+              <Form.Label>Institution <span className="text-danger">*</span></Form.Label>
+              <Select
+                options={institutionOptions}
+                value={institutionOptions.find((o) => o.value === formData.institution) || null}
+                onChange={(selected) => setFormData((prev) => ({ ...prev, institution: selected ? selected.value : "" }))}
+                isClearable
+                isSearchable
+                placeholder="Search or select institution…"
+                styles={selectStyles}
+                noOptionsMessage={() => "No matching institution"}
               />
             </Form.Group>
 
