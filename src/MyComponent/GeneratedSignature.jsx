@@ -6,8 +6,8 @@ const { meta } = data;
 
 const dividerText = "______________________";
 
-// Consistent font size for Gmail — 13px matches Gmail's "Normal"
-const P = 'style="margin:3px 0;font-size:13px;color:#333;"';
+// Consistent font size for Gmail — 10px matches Gmail's "Small"
+const P = 'style="margin:3px 0;font-size:10px;color:#333;"';
 
 const GeneratedSignature = ({ formData }) => {
   const [copied, setCopied] = useState(false);
@@ -48,25 +48,25 @@ const GeneratedSignature = ({ formData }) => {
     linkItems.push({ label: thirdLink.name, url: thirdLink.url });
 
   // Preview styles
-  const s = { margin: "3px 0", lineHeight: "1.4", fontSize: "13px", color: "#333" };
+  const s = { margin: "3px 0", lineHeight: "1.4", fontSize: "10px", color: "#333" };
   const linkStyle = { color: "#1a0dab", textDecoration: "none" };
 
   // ── HTML builders for clipboard ────────────────────────────────────────
   const buildLinksHtml = () =>
     linkItems
-      .map((l) => `<a href="${l.url}" style="color:#1a0dab;text-decoration:none;font-size:13px;">${l.label}</a>`)
-      .join(' <span style="color:#555;font-size:13px;"> | </span> ');
+      .map((l) => `<a href="${l.url}" style="color:#1a0dab;text-decoration:none;font-size:10px;">${l.label}</a>`)
+      .join(' <span style="color:#555;font-size:10px;"> | </span> ');
 
   const buildInstitutionsHtml = () =>
     meta.institutionsList
-      .map((i) => `<p style="margin:1px 0;font-size:13px;color:#333;">${i}</p>`)
+      .map((i) => `<p style="margin:1px 0;font-size:10px;color:#333;">${i}</p>`)
       .join("\n");
 
   const buildAddressHtml = () => `
-<p style="margin:1px 0;font-size:13px;color:#333;padding-top:14px;white-space:nowrap;">
+<p style="margin:1px 0;font-size:10px;color:#333;padding-top:14px;white-space:nowrap;">
   <b>${meta.campusAddress.label}:</b> ${meta.campusAddress.text} ${meta.campusAddress.linkText}
 </p>
-<p style="margin:1px 0;font-size:13px;color:#333;white-space:nowrap;">
+<p style="margin:1px 0;font-size:10px;color:#333;white-space:nowrap;">
   <b>${meta.cityOffice.label}:</b> ${meta.cityOffice.text} ${meta.cityOffice.linkText}
 </p>`;
 
@@ -74,21 +74,21 @@ const GeneratedSignature = ({ formData }) => {
 <div style="font-family:Arial,sans-serif;max-width:500px;line-height:1.4;color:#333;">
 
 <p ${P}><b>${dividerText}</b></p>
-<p style="margin:3px 0;color:#343579;font-size:13px;font-weight:bold;">${name}</p>
-${institution ? `<p ${P}>${institution}</p>` : ""}
-${department ? `<p ${P}>${department}</p>` : ""}
+<p style="margin:3px 0;color:#343579;font-size:10px;font-weight:bold;">${name}</p>
 ${designation ? `<p ${P}>${designation}</p>` : ""}
+${department ? `<p ${P}>${department}</p>` : ""}
+${institution ? `<p ${P}>${institution}</p>` : ""}
 ${position ? `<p ${P}>${position}</p>` : ""}
 
 <p ${P}><b>${dividerText}</b></p>
-${workNumber ? `<p style="margin:3px 0 0;font-size:13px;color:#333;"><b>W-</b> ${workNumber}</p>` : ""}
-${phone ? `<p style="margin:3px 0 0;font-size:13px;color:#333;"><b>P-</b> <a href="tel:${phone}" style="color:#1a0dab;font-size:13px;">${phone}</a></p>` : ""}
-${email ? `<p style="margin:3px 0 0;font-size:13px;color:#333;"><b>M-</b> <a href="mailto:${email}" style="color:#1a0dab;font-size:13px;">${email}</a></p>` : ""}
+${workNumber ? `<p style="margin:3px 0 0;font-size:10px;color:#333;"><b>W-</b> ${workNumber}</p>` : ""}
+${phone ? `<p style="margin:3px 0 0;font-size:10px;color:#333;"><b>P-</b> <a href="tel:${phone}" style="color:#1a0dab;font-size:10px;">${phone}</a></p>` : ""}
+${email ? `<p style="margin:3px 0 0;font-size:10px;color:#333;"><b>M-</b> <a href="mailto:${email}" style="color:#1a0dab;font-size:10px;">${email}</a></p>` : ""}
 
 <p style="margin:10px 0 0;"><img src="${LOGO_URL}" width="200" alt="Acropolis Logo" style="display:block;" /></p>
-<p style="margin:10px 0 0;font-size:13px;color:#333;"><a href="${meta.groupWebsiteUrl}" style="color:#1a0dab;font-size:13px;">${meta.groupWebsiteLabel}</a></p>
-${linkItems.length > 0 ? `<p style="margin:7px 0 0;font-size:13px;color:#333;">${buildLinksHtml()}</p>` : ""}
-${hasExtraContent ? `<div style="margin-top:6px;font-size:13px;"><style>div p{margin:3px 0 !important;}</style>${extraContent}</div>` : ""}
+<p style="margin:10px 0 0;font-size:10px;color:#333;"><a href="${meta.groupWebsiteUrl}" style="color:#1a0dab;font-size:10px;">${meta.groupWebsiteLabel}</a></p>
+${linkItems.length > 0 ? `<p style="margin:7px 0 0;font-size:10px;color:#333;">${buildLinksHtml()}</p>` : ""}
+${hasExtraContent ? `<div style="margin-top:6px;font-size:10px;"><style>div p{margin:3px 0 !important;}</style>${extraContent}</div>` : ""}
 
 ${showFooterDivider ? `<p ${P}><b>${dividerText}</b></p>` : ""}
 ${showInstitutions ? buildInstitutionsHtml() : ""}
@@ -113,18 +113,18 @@ ${showAddress ? buildAddressHtml() : ""}
   const isEmpty = !name && !institution;
 
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", fontSize: "13px", color: "#333", lineHeight: "1.4" }}>
+    <div style={{ fontFamily: "Arial, sans-serif", fontSize: "10px", color: "#333", lineHeight: "1.4" }}>
       {isEmpty ? (
         <div style={{ textAlign: "center", padding: "40px 20px", color: "#ccc" }}>
-          <p style={{ margin: 0, fontSize: "13px" }}>Start filling in the form to see your signature.</p>
+          <p style={{ margin: 0, fontSize: "10px" }}>Start filling in the form to see your signature.</p>
         </div>
       ) : (
         <>
           <p style={s}><b>{dividerText}</b></p>
-          <p style={{ ...s, color: "#343579", fontSize: "13px", fontWeight: "bold" }}>{name}</p>
-          {institution && <p style={s}>{institution}</p>}
-          {department && <p style={s}>{department}</p>}
+          <p style={{ ...s, color: "#343579", fontSize: "10px", fontWeight: "bold" }}>{name}</p>
           {designation && <p style={s}>{designation}</p>}
+          {department && <p style={s}>{department}</p>}
+          {institution && <p style={s}>{institution}</p>}
           {position && <p style={s}>{position}</p>}
 
           <p style={s}><b>{dividerText}</b></p>
