@@ -82,8 +82,8 @@ ${position ? `<p ${P}>${position}</p>` : ""}
 
 <p ${P}><b>${dividerText}</b></p>
 ${workNumber ? `<p style="margin:3px 0 0;font-size:10px;color:#333;"><b>W-</b> ${workNumber}</p>` : ""}
-${phone ? `<p style="margin:3px 0 0;font-size:10px;color:#333;"><b>P-</b> <a href="tel:${phone}" style="color:#1a0dab;font-size:10px;">${phone}</a></p>` : ""}
-${email ? `<p style="margin:3px 0 0;font-size:10px;color:#333;"><b>M-</b> <a href="mailto:${email}" style="color:#1a0dab;font-size:10px;">${email}</a></p>` : ""}
+${phone ? `<p style="margin:3px 0 0;font-size:10px;color:#333;"><b>M-</b> <a href="tel:${phone}" style="color:#1a0dab;font-size:10px;">${phone}</a></p>` : ""}
+${email ? `<p style="margin:3px 0 0;font-size:10px;color:#333;"><b>E-</b> <a href="mailto:${email}" style="color:#1a0dab;font-size:10px;">${email}</a></p>` : ""}
 
 <p style="margin:10px 0 0;"><img src="${LOGO_URL}" width="200" alt="Acropolis Logo" style="display:block;" /></p>
 <p style="margin:10px 0 0;font-size:10px;color:#333;"><a href="${meta.groupWebsiteUrl}" style="color:#1a0dab;font-size:10px;">${meta.groupWebsiteLabel}</a></p>
@@ -130,8 +130,8 @@ ${showAddress ? buildAddressHtml() : ""}
           <p style={s}><b>{dividerText}</b></p>
 
           {workNumber && <p style={{ ...s, marginTop: "3px" }}><b>W-</b> {workNumber}</p>}
-          {phone && <p style={{ ...s, marginTop: "3px" }}><b>P-</b> <a href={`tel:${phone}`} style={linkStyle}>{phone}</a></p>}
-          {email && <p style={{ ...s, marginTop: "3px" }}><b>M-</b> <a href={`mailto:${email}`} style={linkStyle}>{email}</a></p>}
+          {phone && <p style={{ ...s, marginTop: "3px" }}><b>M-</b> <a href={`tel:${phone}`} style={linkStyle}>{phone}</a></p>}
+          {email && <p style={{ ...s, marginTop: "3px" }}><b>E-</b> <a href={`mailto:${email}`} style={linkStyle}>{email}</a></p>}
 
           <p style={{ margin: "10px 0 0" }}>
             <img
